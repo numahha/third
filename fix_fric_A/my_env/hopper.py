@@ -16,8 +16,8 @@ class MyHopperEnv1(HopperEnv):
         print("body_mass is ",self.sim.model.body_mass) # add
         print("geom_friction is ",self.sim.model.geom_friction) # add
         print("[  End print in __init___ in MyHopperEnv1  ]\n") # add
-        self.default_body_mass=self.sim.model.body_mass # add
-        self.default_geom_friction=self.sim.model.geom_friction # add
+        self.default_body_mass=np.copy(self.sim.model.body_mass) # add
+        self.default_geom_friction=np.copy(self.sim.model.geom_friction) # add
         self.torso_mass_dist=None # add
         self.friction_dist=None # add
 
