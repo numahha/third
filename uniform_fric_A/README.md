@@ -4,3 +4,4 @@
 (2)EPOptのtrain (epsilon=0.2)、
 (3)得られた方策を各摩擦係数に対して評価、の順で行う。
 * 結果はdocの中にまとめてある。
+* memoはEPOptのtrainが100反復、memoCは200反復
